@@ -17,20 +17,15 @@ It also covers **bind mounts for live code updates** and **pushing the image to 
 
 ## 🧩 Step-by-Step Setup
 
-### 1️⃣ Clone the Repo
-```bash
-git clone https://github.com/<your-username>/flask-docker-demo.git
-cd flask-docker-demo
-
-### 2️⃣ Build Docker Image
+### 1️⃣ Build Docker Image
 
 docker build -t flask-docker-demo:v1 .
 
-### 3️⃣ Run the Container
+### 2️⃣ Run the Container
 
 docker run -d -p 5000:5000 flask-docker-demo:v1
 
-Open in your browser: http://<EC2-PUBLIC-IP>:5000
+### 3️⃣ Open in your browser: http://<EC2-PUBLIC-IP>:5000
 
 Expected output:
 
